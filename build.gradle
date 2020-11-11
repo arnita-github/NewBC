@@ -1,0 +1,37 @@
+/*
+ * Copyright (c) 2020. 3/3/20 8:25 AM by Fery Irawan
+ * Contact Person :
+ * facebook : https://facebook.com/fery21irawan
+ * instagram : https://instagram.com/fery21irawan
+ * Phone : (+62) 822 3406 8387
+ * Whatsapp : (+62) 822 3406 8387
+ * Address : Jl. Desa Pamalian RT. 05 RW. 02 Pamalian Kec. Kota Besi
+ */
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.1'
+        
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
